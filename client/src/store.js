@@ -1,9 +1,12 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+
+// Our defined reducers
 import rootReducer from './reducers';
 
 const initialState = {};
 
+// Many Other middleware are there such as redux saga, redux promise etc
 const middleware = [thunk];
 
 const store = createStore(

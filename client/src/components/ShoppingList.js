@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
+
+// Fade in and fade out effect package
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
+
+//Validating the global state values
 import PropTypes from 'prop-types';
 
 class ShoppingList extends Component {

@@ -25,6 +25,7 @@ class ItemModal extends Component {
   };
 
   onChange = e => {
+    // For setting component level state
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -36,6 +37,7 @@ class ItemModal extends Component {
     };
 
     // Add item via addItem action
+    // To access function we call using this.props
     this.props.addItem(newItem);
 
     // Close modal
